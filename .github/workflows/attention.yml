@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  irritate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        renew: ["laboratory", "trend", "eagle", "veteran", "impatient"]
+        counseling: ["notion", "degree", "conscience", "notice"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar ln
